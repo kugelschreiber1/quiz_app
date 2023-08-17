@@ -1,0 +1,299 @@
+Functions in Dart:
+We import libraries to use the code in them using the 'import' keyword.
+Functions  are the building blocks of readable, maintainable, and reusable code.
+A function is a set of statements to perform a specific task.
+The 'runApp()' function is a compulsory starting point of all Flutter apps.
+It takes a widget and makes it the root of the widget tree.
+It is called oly once in the 'main' function.
+The 'main' function is the entry point of the Flutter app.
+The 'pubspec.yaml' file manages dependencies in Flutter.
+The 'runApp' tells flutter what to display on the screen.
+The 'setState()' function is used to update the state of the app.
+
+Flutter & Dart Basics:
+Functions can take input values called parameters or arguments.
+Dart is an OOP language and everything in Dart is an object.
+These widgets are like objects and are building blocks of Flutter apps.
+The widgets can be combined and nested tgo form a widget tree.
+The root widget of the widget tree is usually the 'MaterialApp' widget.
+Widgets have properties and methods.
+We can also build custom widgets in Flutter.
+They can either extend the 'StatelessWidget' or 'StatefulWidget' class.
+Functions have either positional or named arguments.
+Positional arguments are required while named arguments are optional.
+Named arguments can be made compulsory using the 'required' keyword.
+Positional arguments can be made optional by enclosing them in square brackets.
+They should however be given a default value.
+The order of positional arguments is also important.
+Named arguments are specified using curly braces in the declaration.
+
+Widgets in Flutter:
+Different widgets have different properties and methods
+They execute different tasks and have different purposes.
+The core widgets are the 'StatelessWidget' and 'StatefulWidget' classes.
+The 'StatelessWidget' class is used for widgets that do not change.
+The 'StatefulWidget' class is used for widgets with dynamic data.
+Some widgets are used for layout while others are used for styling.
+The 'Scaffold' widget is used to create a base page design.
+The 'AppBar' widget is used to create a top app bar.
+The 'Text' widget is used to display text on the screen.
+The 'Column' widget is used to display widgets in a vertical manner.
+The 'Row' widget is used to display widgets in a horizontal manner.
+The 'Container' widget is used for styling and creating layouts.
+The 'Image' widget is used to display images on the screen.
+The 'Icon' widget is used to display icons on the screen.
+The 'ListView' widget is used to display a list of widgets.
+The 'Card' widget is used to create cards on the screen.
+The 'Stack' widget is used to stack widgets on top of each other.
+The 'SafeArea' widget is used to create a safe area on the screen.
+The 'Center' widget is used to center widgets on the screen.
+
+Flutter Layouts & Styling:
+The following widgets are used for layouts in Flutter:
+The 'Container' widget is used for styling and creating layouts.
+The 'Row' widget is used to display widgets in a horizontal manner.
+The 'Column' widget is used to display widgets in a vertical manner.
+The 'ListView' widget is used to display a list of widgets.
+The 'Stack' widget is used to stack widgets on top of each other.
+The 'SafeArea' widget is used to create a safe area on the screen.
+The 'Center' widget is used to center widgets on the screen.
+The 'Expanded' widget is used to expand widgets to fill the available space.
+The 'Flexible' widget is used to make widgets flexible.
+The 'Spacer' widget is used to create space between widgets.
+The 'Wrap' widget is used to wrap widgets to the next line if they overflow.
+The 'GridView' widget is used to display widgets in a grid format.
+The 'SingleChildScrollView' widget is used to make widgets scrollable.
+The 'Positioned' widget is used to position widgets in a stack.
+The 'Align' widget is used to align widgets in a stack.
+The 'SizeBox' widget is used to create space between widgets and also to set the size of child widgets.
+The 'Divider' widget is used to create a horizontal line.
+The 'BoxDecoration' widget is used to decorate the box of a widget.
+The 'BorderRadius' widget is used to create rounded corners.
+The 'BoxShadow' widget is used to create shadows for widgets.
+The 'LinearGradient' widget is used to create linear gradients.
+The 'RadialGradient' widget is used to create radial gradients.
+
+Flutter Data Types:
+Dart is a strongly typed language.
+It has the following data types:
+Numbers: int, double
+Strings: String
+Booleans: bool
+Lists: List
+Maps: Map
+Runes: Runes
+Symbols: Symbol
+The 'var' keyword is used to declare variables whose data type is not known.
+The 'final' keyword is used to declare variables whose value cannot change.
+The 'const' keyword is used to declare variables whose value is constant.
+The 'final' and 'const' keywords are used to declare constants.
+The 'late' keyword is used to declare variables whose value is known at run time.
+Constants are declared at compile time and not run time.
+The 'final' keyword is used to declare variables whose value is known at run time.
+Variables with 'final' keyword cannot be reassigned.
+Widgets are also data types in Flutter.
+Values can also have multiple types in Dart.
+The 'dynamic' keyword is used to declare variables whose data type can change.
+The 'const' keyword improves performance by making variables immutable.
+The 'this' keyword is used to refer to the current instance of the class.
+
+Flutter Operators:
+Operators are used to perform operations on variables and values.
+The following are the types of operators in Dart:
+Arithmetic operators: +, -, *, /, %, ++, --
+Equality and relational operators: ==, !=, >, <, >=, <=
+Type test operators: as, is, is!
+Assignment operators: =, +=, -=, *=, /=, %=, ??=
+Logical operators: &&, ||, !
+Bitwise and shift operators: &, |, ^, ~, <<, >>
+The '??' operator is used to assign a default value to a variable.
+The '?' operator makes a variable nullable.
+The '!' operator is used to make a variable non-nullable.
+
+Generic Types & Gradient Backgrounds:
+The 'List' data type is used to store multiple values in a single variable.
+The 'Map' data type is used to store key-value pairs in a single variable.
+The 'Set' data type is used to store unique values in a single variable.
+The 'List' data type can take different data types hence generic.
+The 'LinearGradient' widget is used to create linear gradients.
+The 'RadialGradient' widget is used to create radial gradients.
+A gradient is a transition between two or more colors.
+The gradients are used with the 'BoxDecoration' widget.
+The 'BoxDecoration' widget is used with the 'Container' widget.
+The 'BoxDecoration' widget is used to decorate the box of a widget.
+
+Flutter Classes:
+Widgets qre objects in Flutter.
+Objects are data structures in memory.
+Classes are therefore blueprints for creating objects.
+Objects are data structures consisting of data properties and methods.
+We use the '.' operator to access properties and methods of an object.
+Classes have constructor functions which are used to create objects.
+A class can have multiple constructor functions.
+Constructors have the same name as the class.
+Constructors are used to initialize objects.
+Constructors can also be used to pass arguments to objects.
+Constructors can also be used to set default values for properties.
+Custom and built-in widgets are defined as classes.
+
+Building Custom Widgets:
+They should be stored in a separate file and imported when needed.
+Custom widgets extend from either the 'StatelessWidget' or 'StatefulWidget' class.
+The 'StatelessWidget' class is used for widgets that do not change.
+The 'StatefulWidget' class is used for widgets with dynamic data.
+Stateless widgets have the following properties:
+They must override the 'build' method and return a widget.
+They should have a const constructor function that calls the super constructor.
+They should return a widget in the 'build' method.
+They should have a named 'key' parameter in the constructor.
+They should have final properties.
+Stateful widgets have the following properties:
+They must override the 'createState' method and return a state.
+They should have a const constructor function that calls the super constructor.
+The 'createState' method returns a state of type 'stateful widget'.
+The state class must override the 'build' method and return a widget.
+
+Splitting Code into Multiple Files:
+Necessary to split code into multiple files for large projects.
+This increases the readability, and reusability of the code.
+The 'import' keyword is used to import code from other files.
+The 'export' keyword is used to export code to other files.
+The 'as' keyword is used to give a file an alias.
+
+Flutter Variables:
+Variables are data containers.
+They can be created in different ways.
+They can also have different types and values.
+The preferred naming convention for variables is camelCase.
+
+Flutter Images & Multiple Constructors:
+Some constructors can act as convenience functions.
+Images can be added to the project in the 'assets' folder.
+The 'pubspec.yaml' file is used to add images to the project.
+The 'Image' widget is used to display images on the screen.
+The 'Image' widget has different constructors.
+The 'Image.asset' constructor is used to display images from the 'assets' folder.
+The 'Image.network' constructor is used to display images from the internet.
+The 'Image.file' constructor is used to display images from the device.
+The 'Image.memory' constructor is used to display images from memory.
+The 'Image' widget has different properties that can be used to style images.
+
+Flutter Columns & Rows:
+The 'Column' and 'Row' widgets have different properties that can be used to style them.
+The 'Column' widget is used to display widgets in a vertical manner.
+The 'mainAxisAlignment' property is used to align widgets vertically.
+The 'crossAxisAlignment' property is used to align widgets horizontally.
+The 'Row' widget is used to display widgets in a horizontal manner.
+The 'mainAxisAlignment' property is used to align widgets horizontally.
+The 'crossAxisAlignment' property is used to align widgets vertically.
+Both the 'Column' and 'Row' widgets have the 'children' property.
+The 'children' property is used to add widgets to the 'Column' and 'Row' widgets.
+The 'children' property takes a list of widgets.
+
+Flutter Container Widget:
+It can be used for both styling and layout of child widget.
+The 'Container' widget creates a container for child widget.
+The 'Container' widget has different properties that can be used to style it.
+The 'child' property is used to add a widget to the 'Container' widget.
+The 'color' property is used to add a color to the 'Container' widget.
+The 'width' property is used to set the width of the 'Container' widget.
+The 'height' property is used to set the height of the 'Container' widget.
+The 'margin' property is used to set the margin of the 'Container' widget.
+The 'padding' property is used to set the padding of the 'Container' widget.
+The 'decoration' property is used to set the decoration of the 'Container' widget.
+The 'transform' property is used to set the transform of the 'Container' widget.
+The 'alignment' property is used to set the alignment of the 'Container' widget.
+The 'constraints' property is used to set the constraints of the 'Container' widget.
+The 'foregroundDecoration' property is used to set the foreground decoration of the 'Container' widget.
+The 'clipBehavior' property is used to set the clip behavior of the 'Container' widget.
+
+Flutter Buttons:
+Most buttons have a built in 'styleFrom' method that can be used to style them.
+It can be accessed using the 'ButtonName.styleFrom' method.
+This is considered easier  than the 'style' property.
+It can also be styled using the 'style' property.
+Some buttons have a built in 'icon' property that can be used to add an icon to them.
+It can be accessed using the 'ButtonName.icon' method.
+The main types of buttons in Flutter are:
+-ElevatedButton
+-TextButton
+-OutlinedButton
+-FloatingActionButton
+-IconButton
+DropdownButton
+The 'ElevatedButton' widget is used to create a raised button.
+The 'TextButton' widget is used to create a text button.
+The 'OutlinedButton' widget is used to create an outlined button.
+The 'FloatingActionButton' widget is used to create a floating action button.
+The 'IconButton' widget is used to create an icon button.
+The 'DropdownButton' widget is used to create a dropdown button.
+The 'onPressed' property is used to add a function to a button.
+The 'style' property is used to style a button.
+The 'icon' property is used to add an icon to a button.
+The 'label' property is used to add a label to a button.
+The 'iconSize' property is used to set the size of the icon in a button.
+The 'iconColor' property is used to set the color of the icon in a button.
+The 'elevation' property is used to set the elevation of a button.
+The 'backgroundColor' property is used to set the background color of a button.
+The 'foregroundColor' property is used to set the foreground color of a button.
+The 'shape' property is used to set the shape of a button.
+The 'borderSide' property is used to set the border side of a button.
+The 'borderRadius' property is used to set the border radius of a button.
+The 'borderColor' property is used to set the border color of a button.
+The 'borderWidth' property is used to set the border width of a button.
+The 'padding' property is used to set the padding of a button.
+The 'splashColor' property is used to set the splash color of a button.
+The 'highlightColor' property is used to set the highlight color of a button.
+The 'hoverColor' property is used to set the hover color of a button.
+The 'focusColor' property is used to set the focus color of a button.
+The 'alignment' property is used to set the alignment of a button.
+The 'dropdownColor' property is used to set the dropdown color of a button.
+The 'disabledColor' property is used to set the disabled color of a button.
+The 'disabledTextColor' property is used to set the disabled text color of a button.
+The 'autofocus' property is used to set the autofocus of a button.
+The 'clipBehavior' property is used to set the clip behavior of a button.
+The 'focusNode' property is used to set the focus node of a button.
+The 'onLongPress' property is used to set the on long press of a button.
+The 'onPress' property is used to set the action of the press of a button.
+The 'onHighlightChanged' property is used to set the on highlight changed of a button.
+The 'mouseCursor' property is used to set the mouse cursor of a button.
+The 'visualDensity' property is used to set the visual density of a button.
+The 'materialTapTargetSize' property is used to set the material tap target size of a button.
+The 'enableFeedback' property is used to set the enable feedback of a button.
+The 'tapTargetSize' property is used to set the tap target size of a button.
+The 'textStyle' property is used to set the text style of a button.
+The 'textColor' property is used to set the text color of a button.
+The 'textAlignment' property is used to set the text alignment of a button.
+The 'textDirection' property is used to set the text direction of a button.
+
+Flutter Widget Transparencies:
+The 'Opacity' widget is used to set the opacity of a widget.
+The only problem is that is performance intensive.
+The 'opacity' property is used to set the opacity of a widget.
+The 'Opacity' widget has a child property that is used to add a widget to it.
+The 'Opacity' widget has an 'alwaysIncludeSemantics' property that is used to set the always include semantics of a widget.
+The 'Opacity' widget has an 'opaque' property that is used to set the opaque of a widget.
+The 'Opacity' widget has an 'excludeFromSemantics' property that is used to set the exclude from semantics of a widget.
+The 'Opacity' widget has an 'child' property that is used to set the child of a widget.
+The other way to set the opacity of a widget is to use the 'Color' widget.
+The 'Color' widget has an 'withOpacity' method that is used to set the opacity of a widget.
+The 'withOpacity' method takes a double as an argument.
+The 'withOpacity' method returns a color with the opacity set to the double passed to it.
+Another way to set the opacity of a widget is to apply a transparent color to it.
+That can be a color with an alpha channel.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -31,7 +31,7 @@ The results page view is also scrollable.
 <img alt="results-page.png" height="auto" src="assets%2Fimages%2Fresults-page.png" width="300"/>
 
 ## Acknowledgements
-Credits given to my instructor: Maximilian Schwarzmüller
+Maximilian Schwarzmüller
 
 ## NOTE
 * The application could use modifications to be better.

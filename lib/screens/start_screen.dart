@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/shared/gradient_container.dart';
+import 'package:quiz_app/shared/constants.dart';
 
 class Home extends StatelessWidget {
   const Home(this.startQuiz, {super.key});
@@ -20,15 +21,16 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Image.asset(
               'assets/images/quiz-logo.png',
-              width: 300,
+              width: Constants.getScreenWidth(context) * 0.5,
               fit: BoxFit.contain,
               color: const Color.fromARGB(100, 255, 255, 255),
             ),
-            const SizedBox(
-              height: 80,
+            SizedBox(
+              height: Constants.getScreenWidth(context) * 0.1,
             ),
             Text(
               'Learn Flutter the fun way!',
@@ -39,9 +41,7 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 60,
-            ),
+            SizedBox(height: Constants.getScreenWidth(context) * 0.1),
             OutlinedButton.icon(
               onPressed: startQuiz,
               icon: const Icon(
@@ -63,13 +63,9 @@ class Home extends StatelessWidget {
                   horizontal: 20,
                   vertical: 20,
                 ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                  side: const BorderSide(
-                    color: Colors.white,
-                  ),
-                ),
+                shape: const StadiumBorder(),
                 side: const BorderSide(
+                  width: 3.0,
                   color: Colors.white38,
                 ),
               ),

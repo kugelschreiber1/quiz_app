@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/shared/answer_button.dart';
 import 'package:quiz_app/shared/gradient_container.dart';
 import 'package:quiz_app/data/questions.dart';
+import 'package:quiz_app/shared/constants.dart';
 
 class Question extends StatefulWidget {
   const Question({super.key, required this.onSelectAnswer});
@@ -38,11 +39,22 @@ class _QuestionState extends State<Question> {
       beginPosition: Alignment.topLeft,
       endPosition: Alignment.bottomRight,
       child: Container(
-        margin: const EdgeInsets.all(30.0),
+        constraints: const BoxConstraints.expand(),
+        margin: const EdgeInsets.all(15.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            LinearProgressIndicator(
+              value: (currentQuestionIndex + 1) / questions.length,
+              backgroundColor: Colors.white,
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.purple),
+              minHeight: 10.0,
+              semanticsLabel: 'Questions linear progress indicator',
+            ),
+            SizedBox(
+              height: Constants.getScreenWidth(context) * 0.1,
+            ),
             Text(
               currentQuestion.question,
               style: GoogleFonts.poppins(
@@ -54,8 +66,8 @@ class _QuestionState extends State<Question> {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: Constants.getScreenWidth(context) * 0.1,
             ),
             ...currentQuestion.getShuffledAnswers().map((answer) {
               return AnswerButton(
